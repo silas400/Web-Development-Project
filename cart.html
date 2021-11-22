@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Cart</title>
+  
+  <meta name="author" content="SitePoint">	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thanks for making a purchase, it goes a long way. If
+  you have any comments, ideas, or suggestions head to the contact page and get in touch!">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+
+<body>
+<div id="wrapper">
+	<header>
+		<img src="Images/logo.png" width="300" height="132" alt="Leslie Diana Zavala">
+	</header>
+
+
+	<nav>
+	<ul>
+		<li><a href="index.html">home</a></li>
+		<li><a href="shop.html">shop</a></li>
+		<li><a href="about.html">about</a></li>
+		<li><a href="contact.html">contact</a></li>
+	</ul>
+	</nav>
+	
+	<div id="cartDiv">
+		<p id="counter">0</p>
+		<a href="cart.html" id='homep'><img src="Images/shopping-cart.png" id="cart" alt="shopping cart"></a>
+	</div>
+	
+	<main>
+		<p class="explanationText">
+			Please provide accurate contact and shipping information so that we can get your order to you as soon as possible.
+			<br><br>
+			After you submit an order, we will reach out to confirm your shipping details and provide you with a PayPal invoice. After payment is received, your order will be on the way!
+		</p>
+	
+	
+	<h1 id="cart_head">You have ordered <span id="itemCount">0</span> items and the total price is $<span id="total">0.00</span></h1>
+	<h1 id= "cart_head2">Check Ordered Items Below!</h1>
+	
+
+	<div class="cart_gallery">
+	</div>
+
+	
+	<button id="clear">Clear Cart</button>
+	
+	<form id="orderForm" action="Scripts/process_order.php" onsubmit="return checkForm()" method="post">
+    <table id="orderFormTable">
+	
+		<tr>
+		  <td class="td1">Name</td>
+		  <td><input type="text" name="name" id="userName" required size="50" maxlength="1000" placeholder="Your name for shipping label"></td>
+		</tr>
+	
+		<tr>
+		  <td class="td1">Shipping Address</td>
+		  <td><input type="text" name="address" id="userAddress" required size="50" maxlength="1000" placeholder="Ex: 1111 Sample Ave (Apt. 2)"></td>
+		</tr>
+		
+		<tr>
+		  <td class="td1">City</td>
+		  <td><input type="text" name="city" id="userCity" required size="50" maxlength="1000" placeholder="Ex: New York City"></td>
+		</tr>
+		
+		<tr>
+		  <td class="td1">State</td>
+		  <td><input type="text" name="state" id="userState" required size="50" maxlength="1000" placeholder="Ex: NY"></td>
+		</tr>
+		
+		<tr>
+		  <td class="td1">ZIP Code</td>
+		  <td><input type="text" pattern="[0-9]{5,10}" name="postalCode" id="userPostal" required size="50" maxlength="1000" placeholder="Your postal code. Numbers only. Ex: 20560"></td>
+		</tr>
+		
+		<tr>
+		  <td class="td1">Phone Number</td>
+		  <td><input type="tel" name="phone" id="userPhone" required size="50" maxlength="200" placeholder="Format: 111-111-1111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> </td>
+		</tr> 
+		
+		<tr>
+		  <td class="td1">Email</td>
+		  <td><input type="text" name="email" id="userEmail" required size="50" maxlength="200" placeholder="example@email.com"></td>
+		</tr>
+		
+		<tr>
+		  <td class="td1">Message / Notes</td>
+		  <td><input type="text" name="message" id="userMessage" size="50" placeholder="(Optional) Please include any other information here."></td>
+		</tr>
+		
+		<tr>
+		  <td><input type="hidden" name="products"></td>
+		</tr>
+		
+		<tr>
+		 <td colspan="2" style="text-align: center;">
+		 <input type="submit" name="submit" value="Submit Order" id="submitButton"></td>
+		</tr>
+		
+	</table>
+	<h3 id="errorMessage"></h3>
+	</form>
+	
+	<footer><p>Copyright &copy;<span id="copyright"></span> Leslie Zavala</p></footer>
+	</main>
+	<script src="Scripts/form_validation.js"></script>
+	<script src="Scripts/create_order.js"></script>
+</div>	
+</body>
+
+</html>

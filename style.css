@@ -1,0 +1,277 @@
+* { box-sizing: border-box; }
+	
+/* Colors: White: #FFFFFF; Off-white: #F2F2F2; Dark Purple: #71536D; Pink: #F8AFB3; */
+
+/*This css effects all pages */
+html { background-color: #71536D;
+	background-image: url("Images/background.jpg");
+	background-repeat: repeat; 
+	background-size: cover;
+	height: 100%; 
+	 }
+	
+body { font-family: sans-serif;
+		height: 100%;
+		margin-top: 0; }
+	
+header { text-align: center; }
+
+nav { text-align: center; 
+	font-size: 1.8em;
+	font-family: serif;
+	letter-spacing: .5px; }
+nav ul { list-style-type: none; }
+nav li { display: inline-block; 
+	margin: 10px;
+	padding: 5px; 
+	width: 150px; }
+nav a { display: list-item;
+	text-decoration: none;
+	color: #71536D; }
+
+
+ /* This css effects all pages but the home page */
+p { font-size: 1.2em; }
+
+	
+.cart_img { width: 100%;
+	height: 100%;
+	object-fit: cover; }
+
+#wrapper { background-color: #F2F2F2;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto; 
+	padding-bottom: 20px;
+	min-height: 100%; }
+			
+header { background-color: #71536D;
+	padding-bottom: 8px; }
+nav { background-color: #FFFFFF; }
+nav ul { margin: 0; }
+
+main { clear: both;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto; }
+
+footer { 
+	margin-top: 30px;
+	border-top: 1px solid black;
+	text-align: center;
+	font-size: 80%; }
+
+
+/* This is the CSS for the Shopping Cart icon */
+#cartDiv { 
+	float: right;
+	position: relative; 
+	margin-top: 10px;
+	margin-right: 15px;
+	width: 75px;
+	height: 75px; 
+	text-align: center;
+}
+
+#homep {
+	width: 75px;
+	height: 75px;
+}
+
+#cart {
+	display: block;
+	margin: auto;
+	height: 47px;
+}
+
+#counter {
+	color: red;
+	font-weight: bold; 
+	display: inline-block;
+	text-align: center;
+	margin: auto -6px auto auto;
+}
+
+/*This is the css for the home page */
+
+#homeNav { position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: none; }
+#homeNav li { background-color: white;
+	border-radius: 15px; }
+#homeHeader { background: none; }
+
+
+/*This is the css for the shop page */
+
+.gallery { text-align: center;  }
+.gallery__img { cursor: pointer; }
+.gallery figure { display: inline-block;
+    width: 340px;
+	margin: 20px;	}
+.gallery img:hover { 
+	transform: scale(1.05); }
+.gallery figcaption { padding-top: 10px; }
+.explanationText {
+	margin: auto;
+	text-align: center;
+	max-width: 800px;
+	letter-spacing: .03em;
+	padding: 0px 0px 40px 0px;
+}
+
+#shopOrderButtonA {
+	text-decoration:none;
+	text-align:center;
+	margin: 25px auto 25px auto;
+	background-color: #71536D;
+	color: #FFF; 
+	height:75px;
+	width: 80%;
+	max-width: 400px;
+	display: block;
+	border-radius:20px;
+	border-bottom: 10px solid #593e58;
+	border-top: 10px solid #805d77;
+}
+
+#shopOrderButtonA:hover {
+	background-color: #dea0d6;
+	border-bottom: 10px solid #bc7ec2;
+	border-top: 10px solid #f2b8e2;
+}
+
+#shopOrderButtonA p {
+	letter-spacing: .1em;
+}
+
+
+/* This is the CSS for the cart page */
+form { border: 0px; }
+
+.cart_gallery {
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    grid-gap: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#orderFormTable {
+	border: 0px;
+	width: 100%;
+	display:inline-block;
+}
+
+#orderFormTable tr {
+	height: 50px;
+	max-width:100%;
+}
+
+#orderFormTable td {
+	display:inline-block;
+}
+
+.td1 {
+	display:block;
+	width: 160px;
+	font-weight:bold;
+	color: #71536D;
+	letter-spacing: .05em;
+	
+}
+
+#submitButton, #clear {    
+	background-color: #FFFFFF;
+	color: #71536D;
+	padding: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: .9em;
+	border: 2px solid #71536D;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#clear { margin-bottom: 2em; }
+	
+
+/* This is the css for the about page */
+
+h2 { text-align: center; }
+
+#aboutImg { float: left; }
+
+
+#info { margin-left: 360px;
+		padding-left: 2.5%; 
+		text-align: center; 
+		max-width: 800px; }
+		
+		
+
+/* this is the css for the contact page */
+#contact { margin-left: 3em; 
+	margin-right: 3em;
+	text-align: center; }
+
+/* this is CSS for the login page*/
+#loginDiv {
+	display: block;
+	margin:100px auto auto auto;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;
+}
+
+#loginPageHTML {
+	background-color: #6e5167;
+	background-image: none;
+	color: #FFF;
+}
+
+#loginForm {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px;
+	width: 150px;
+	margin-top: auto;
+	line-height: 30px;
+}
+
+#loginSubmitButton {
+	padding: 5px 25px 5px 25px;
+	margin: 20px;
+}
+
+/* This css makes a few changes for smaller devices */
+@media only screen and (max-width: 700px)
+{
+body { min-width: 100%;
+	margin: 0px;
+	font-size: 90%; }
+#wrapper { min-width: 100%; }
+#homeNav li { display: inline-block; }
+#aboutImg { float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: 60%; }
+#info { margin-left: 2.5%; }
+}
+
+
+
+#footerAbt {
+	margin-top: 250px;
+}
+
+
+
+
+

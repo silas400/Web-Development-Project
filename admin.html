@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en" id="loginPageHTML">
+<head>
+  <meta charset="utf-8">
+
+  <title>Login</title>
+  <meta name="description" content="Leslie Zavala">
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+	<div id="loginDiv">
+		<p>Please enter your username and password below.</p>
+		<form id="loginForm" action="Scripts/adminLogin.php" method="post">		
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username"><br>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password"><br>
+		<input type="submit" id="loginSubmitButton" value="Submit">
+		</form>
+	</div>
+
+</body>
+</html>
