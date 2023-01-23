@@ -109,7 +109,7 @@
 			$mail = new PHPMailer(true);
 			
 			//intialize variables for the receiver of the email, the subject, the message, and headers
-			$receiver = "thesilas600@gmail.com";
+			$receiver = "redacted";
 			$subject = "Just A Test";
 			
 			//Create the email text with all order information:
@@ -152,8 +152,8 @@
 			$mail->Host = "smtp.gmail.com";
 			$mail->Port = 587;
 			$mail->isHTML(true);
-			$mail->Username = 'thebarnes400@gmail.com';
-			$mail->Password = 'immojdqlwzfqlgbr';
+			$mail->Username = 'redacted';
+			$mail->Password = 'redacted';
 			$mail->addAddress($receiver);
 			$mail->SetFrom('no-reply@yahoo.org');
 			$mail->Subject = 'TEST EMAIL for SDEV265 Project';
